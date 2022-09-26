@@ -10,14 +10,18 @@ Parent/Child node: The root node of the tree is called the parent node, and othe
 
 DECISION TREE ALGORITHM:- 
 
-        In a decision tree, for predicting the class of the given dataset, the algorithm starts from the root node of the tree. This algorithm compares the values of 
-        root attribute with the record (real dataset) attribute and, based on the comparison, follows the branch and jumps to the next node. For the next node, the 
-        algorithm again compares the attribute value with the other sub-nodes and move further. It continues the process until it reaches the leaf node of the tree. 
+        In a decision tree, for predicting the class of the given dataset, the algorithm starts from the root node of the tree. This algorithm compares the values of  
+root attribute with the record (real dataset) attribute and, based on the comparison, follows the branch and jumps to the next node. For the next node, the 
+algorithm again compares the attribute value with the other sub-nodes and move further. It continues the process until it reaches the leaf node of the tree. 
 
 The complete process can be better understood using the below algorithm:
 
 Step-1: Begin the tree with the root node, says S, which contains the complete dataset.
+
 Step-2: Find the best attribute in the dataset using Attribute Selection Measure (ASM).
+
 Step-3: Divide the S into subsets that contains possible values for the best attributes.
+
 Step-4: Generate the decision tree node, which contains the best attribute.
+
 Step-5: Recursively make new decision trees using the subsets of the dataset created in step -3. Continue this process until a stage is reached where you cannot further classify the nodes and called the final node as a leaf node.
